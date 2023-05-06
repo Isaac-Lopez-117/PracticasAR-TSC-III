@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-Packages/
+Packages/*.tgz
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -72,8 +72,3 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Vuforia
-/VuforiaSamples/
-/VuforiaAssets/
-/Vuforia.prefab
-/VuforiaSDK/
