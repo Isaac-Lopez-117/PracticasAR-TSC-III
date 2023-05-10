@@ -37,16 +37,24 @@ public class rotate : MonoBehaviour
 
             if (Input.touchCount == 1){
                 
-                if (touchOne.phase == TouchPhase.Began){
+                if (touchOne.phase == TouchPhase.Began)
+                {
                     initialTouchPos = touchOne.position;
                     isARObjectSelected = CheckTouchOnArObject(initialTouchPos);
-                    rotateIf();
+                    if (isARObjectSelected)
+                    {
+                        rotateIf();
+                    }
+                    
                 }
+                
             }
         }
-
-        if (rotateStatus == true){
+        if(rotateStatus)
+        {
             objectRotate.transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
+        }else{
+            objectRotate.transform.Rotate(Vector3.up, rotateSpeed * 0);
         }
     }
 
