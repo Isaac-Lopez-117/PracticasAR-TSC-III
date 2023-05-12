@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Practica7_LopezAnicetoSaulIsaac.unity
-    guid: a664d8db267cc2741b40dfa5829ccae8
+    path: Assets/Scenes/Practica8_LopezAnicetoSaulIsaac.unity
+    guid: fc70f1253acc0a94f942664ca2460f49
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3337cc12263200c489a4b4b6e17666ee, type: 2}
