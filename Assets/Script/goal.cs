@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class goal : MonoBehaviour
 {
-    // Define una variable pública para el color de meta
-    public Color goalColor = Color.green;
+    public GameManager gameManager;
+    
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -13,7 +13,14 @@ public class goal : MonoBehaviour
         if (collider.gameObject.name == "Pelota")
         {
             // Cambiar el color del objeto
-            collider.gameObject.GetComponent<Renderer>().material.color = goalColor;
+            //collider.gameObject.GetComponent<Renderer>().material.color = goalColor;
+            gameManager.indiceNivel += 1;
+            if (gameManager.indiceNivel > 3)
+            {
+                gameManager.indiceNivel = 0;
+            }
+            
+
         }
     }
 }
