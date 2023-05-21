@@ -18,4 +18,8 @@ public class LevelManager : MonoBehaviour
     {
 
     }
+
+    public void numIntentos(){
+        intentos += 1;
+    }
 }

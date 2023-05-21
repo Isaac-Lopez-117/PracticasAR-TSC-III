@@ -11,15 +11,15 @@ public class goal : MonoBehaviour
         // Verifica si el objeto ha llegado a la meta
         if (collider.gameObject.name == "Pelota")
         {
-            gameManager.indiceNivel += 1;
-            if (gameManager.indiceNivel > 2)
-            {
-                gameManager.indiceNivel = 0;
-            }
             Destroy(collider.gameObject);
 
             if (gameManager != null)
             {
+                gameManager.indiceNivel += 1;
+                if (gameManager.indiceNivel > 2)
+                {
+                    gameManager.indiceNivel = 0;
+                }
                 gameManager.controlNiveles();
             }
         }

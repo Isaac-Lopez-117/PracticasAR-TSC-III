@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public List<GameObject> muestraNiveles;
     public List<LevelManager> level;
+
     public int intentosTotal;
     public int indiceNivel;
     public int indices;
+
+    public TextMeshProUGUI intentosText; // Referencia al objeto de texto para mostrar el número de intentos
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +37,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         muestraNiveles[indiceNivel].SetActive(true);
+
+        controlIntentos();
+        intentosText.text = "Intentos: " + intentosTotal.ToString(); // Actualiza el texto con el número de intentos total
     }
 }
