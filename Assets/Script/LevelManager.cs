@@ -6,11 +6,11 @@ public class LevelManager : MonoBehaviour
 {
     public int intentos;
 
-    GameManager gameManager;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        gameManager.controlNiveles();
+
     }
 
     // Update is called once per frame
@@ -21,5 +21,6 @@ public class LevelManager : MonoBehaviour
 
     public void numIntentos(){
         intentos += 1;
+        gameManager.controlIntentos();
     }
 }

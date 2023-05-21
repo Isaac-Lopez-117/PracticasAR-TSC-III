@@ -16,10 +16,6 @@ public class goal : MonoBehaviour
             if (gameManager != null)
             {
                 gameManager.indiceNivel += 1;
-                if (gameManager.indiceNivel > 2)
-                {
-                    gameManager.indiceNivel = 0;
-                }
                 gameManager.controlNiveles();
             }
         }
